@@ -1,0 +1,27 @@
+<html> 
+	<head> 
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Checking Textbook Availability</title> 
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+	</head> 
+	<body> 
+		<div>
+			<h1>Check Textbook Availability</h1>
+			<form action = "/upload" method="POST" enctype="multipart/form-data"> 
+				<label for="files">Select syllabi PDF files:</label>
+				<input type="file" name="files" multiple />
+				<br>
+				<label for="url">Provide the library url:</label>
+				<input type="text" name="url"> 
+				<br>
+				<label for="file">Select the accronym file:</label>
+				<input type="file" name="file" />
+				<br>
+				<input type = "submit" value="Submit"> 
+			</form> 
+		</div>
+	</body> 
+</html> 
+

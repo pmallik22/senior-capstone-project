@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing Complete</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/success.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Files Uploaded and Processed Successfully!</h1>
+            <p>Your report is ready to download.</p>
+            <a href="{{ url_for('static', filename=OUTPUT) }}" download class="download-btn">Download Report</a>
+        </div>
+    </div>
+</body>
+</html>
